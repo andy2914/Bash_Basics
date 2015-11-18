@@ -13,3 +13,4 @@ if [ "$pid" ]
     else
         echo "Acrobat not running"
     fi
+ 
