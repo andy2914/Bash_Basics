@@ -5,3 +5,11 @@ useris=$(ls -l /dev/console | awk -F"1 " '{print $2}' | awk -F"  " '{print $1}')
 ## Example usage
 
 sudo -u "useris" <cmd>
+
+## Another Method
+
+#!/bin/bash
+
+currentUser=`ls -l /dev/console | awk '{print $3}'`
+
+cd /Users/$currentUser
