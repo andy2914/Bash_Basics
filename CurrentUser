@@ -13,3 +13,4 @@ sudo -u "useris" <cmd>
 currentUser=`ls -l /dev/console | awk '{print $3}'`
 
 cd /Users/$currentUser
+ 
