@@ -1,0 +1,7 @@
+## Code to identify current user and store it in a variable
+
+useris=$(ls -l /dev/console | awk -F"1 " '{print $2}' | awk -F"  " '{print $1}')
+
+## Example usage
+
+sudo -u "useris" <cmd>
